@@ -1,0 +1,48 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+    width: 35vh;
+    border-style: solid;
+    background-color: darkslateblue;
+}
+
+.screen {
+    height: 23%;
+    width: 90%;
+    background-color: lightgray; 
+    border-style: solid;
+}
+
+.bottom {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    height: 71%;
+    width: 90%;
+    border-style: solid;
+    background-color: darkslategray;
+    
+
+}
+
+.btn {
+    font-size: xx-large;
+    border-radius: 8%;
+}
+
+#zero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
