@@ -23,6 +23,7 @@ html, body {
     width: 90%;
     background-color: lightgray; 
     border-style: solid;
+    font-size: 200%;
 }
 
 .bottom {
@@ -45,4 +46,22 @@ html, body {
 #zero {
     grid-column-start: 1;
     grid-column-end: 3;
+}
+
+.results {
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 2.5%;
+    padding-right: 3%;
+    font-size: 150%;
+}
+
+.calculations {
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 2.5%;
+    padding-right: 3%;
+    font-size: 150%;
 }
