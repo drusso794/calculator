@@ -48,11 +48,10 @@ html, body {
     grid-column-end: 3;
 }
 
-.results {
+.results.calculations {
     height: 50%;
     display: flex;
     justify-content: flex-end;
-    padding-bottom: 2.5%;
     padding-right: 3%;
     font-size: 150%;
 }
@@ -61,7 +60,16 @@ html, body {
     height: 50%;
     display: flex;
     justify-content: flex-end;
-    padding-top: 2.5%;
     padding-right: 3%;
     font-size: 150%;
+    padding-top: 2.5%;
+}
+
+.results {
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3%;
+    font-size: 150%;
+    padding-bottom: 2.5%;
 }
