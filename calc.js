@@ -26,17 +26,23 @@ function operate(operator, ...operands) {
     };
 };
 
+const allClear = document.getElementById('clear');
 const equation = document.querySelector('.calculations');
 const btn = document.querySelectorAll('.operand');
+let numsShown = [];
 
 btn.forEach(button => {
     button.addEventListener('click', () => {
-        equation.textContent = button.value; 
+        numsShown.push(button.value);
+        equation.textContent = numsShown.join('');
+        return numsShown;
     });
 });
 
-
-
+allClear.addEventListener('click', () => {
+    numsShown = [];
+    equation.textContent = numsShown;
+});
 
 
 
