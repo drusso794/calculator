@@ -23,7 +23,9 @@ html, body {
     width: 90%;
     background-color: lightgray; 
     border-style: solid;
-    font-size: 200%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .bottom {
@@ -34,11 +36,9 @@ html, body {
     width: 90%;
     border-style: solid;
     background-color: darkslategray;
-    
-
 }
 
-.btn {
+button {
     font-size: xx-large;
     border-radius: 8%;
 }
@@ -48,28 +48,12 @@ html, body {
     grid-column-end: 3;
 }
 
-.results.calculations {
-    height: 50%;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 3%;
-    font-size: 150%;
-}
-
 .calculations {
     height: 50%;
-    display: flex;
-    justify-content: flex-end;
     padding-right: 3%;
-    font-size: 150%;
-    padding-top: 2.5%;
+    font-size: 700%;
+    display: flex;
+    align-items: center;
+    
 }
 
-.results {
-    height: 50%;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 3%;
-    font-size: 150%;
-    padding-bottom: 2.5%;
-}

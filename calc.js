@@ -26,7 +26,20 @@ function operate(operator, ...operands) {
     };
 };
 
-console.log(operate('/', 2, 7));
+const equation = document.querySelector('.calculations');
+const btn = document.querySelectorAll('.operand');
+
+btn.forEach(button => {
+    button.addEventListener('click', () => {
+        equation.textContent = button.value; 
+    });
+});
+
+
+
+
+
+
 
 
 
