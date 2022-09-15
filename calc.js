@@ -44,7 +44,7 @@ function calculate() {
         total = operate(total, Number.parseFloat(operands[i]), operators[i-1]);
     };
   };
-    return `${total.toFixed(2)}`;
+    return `${total}`;
 };
 
 function operate(val1, val2, operator) {
@@ -69,6 +69,8 @@ function updateDisplay(num = '0') {
         screen.style.fontSize = '350%';
     } else if (digitCount >= 10) {
         screen.style.fontSize = '250%';
+    } else if (digitCount >= 13) {
+        screen,style.fontSize ='150%'
     } else {
         screen.style.fontSize = '500%';
     };
